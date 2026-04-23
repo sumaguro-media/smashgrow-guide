@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | スマグロ攻略</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <a class="logo" href="index.html">
+            <span class="logo-icon">⚔</span>
+            <span class="logo-text">スマグロ攻略</span>
+        </a>
+        <nav><a href="index.html">トップ</a></nav>
+    </div>
+</header>
+
+<main>
+    <div class="form-wrap">
+        <h1>お問い合わせ</h1>
+        <p style="font-size:0.88rem;color:#666;margin-bottom:1.5rem;">
+            記事の誤りや情報提供、ご意見・ご感想はこちらからどうぞ。<br>
+            攻略情報の提供も歓迎しています。
+        </p>
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" placeholder="ゲームのニックネームでもOK" required>
+
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+            <label for="subject">件名</label>
+            <input type="text" id="subject" name="subject" placeholder="例：〇〇の攻略情報について" required>
+
+            <label for="message">メッセージ</label>
+            <textarea id="message" name="message" placeholder="内容をご記入ください" required></textarea>
+
+            <button type="submit">送信する</button>
+        </form>
+
+        <p style="margin-top:1.5rem;font-size:0.82rem;color:#999;">
+            ※返信まで数日いただく場合があります。
+        </p>
+
+        <p style="margin-top:1.5rem;"><a class="back-link" href="index.html">← トップに戻る</a></p>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <p>当サイトはドラゴンクエストスマッシュグロウの非公式攻略サイトです。</p>
+        <div class="footer-links">
+            <a href="privacy.html">プライバシーポリシー</a>
+            <a href="contact.html">お問い合わせ</a>
+        </div>
+        <p class="copyright">© 2026 スマグロ攻略サイト</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドラクエスマッシュグロウ攻略 | 効率的な進め方・スキルガイド</title>
+    <meta name="description" content="ドラゴンクエストスマッシュグロウの攻略情報。序盤の効率的な進め方、スキル選択のコツ、ボス攻略まで初心者向けにわかりやすく解説。">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .hero {
+            background-image:
+                linear-gradient(to right, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.3) 55%, rgba(0,0,0,0.1) 100%),
+                url('https://prcdn.freetls.fastly.net/release_image/128734/343/128734-343-d272a5a28b2a7767d343227a17cd96fb-1200x675.jpg');
+            background-size: cover;
+            background-position: center top;
+            border-bottom: 3px solid var(--accent);
+        }
+        .hero-thumb {
+            position: relative;
+            width: 100%;
+            max-width: 380px;
+            aspect-ratio: 16/9;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            display: block;
+        }
+        .hero-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .play-btn {
+            position: absolute; inset: 0;
+            display: flex; align-items: center; justify-content: center;
+            background: rgba(0,0,0,0.25);
+            transition: background 0.2s;
+        }
+        .hero-thumb:hover .play-btn { background: rgba(0,0,0,0.45); }
+        .play-btn svg { width: 56px; height: 56px; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5)); }
+        .card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        @media (max-width: 860px) {
+            .hero-inner { flex-direction: column; }
+            .hero-thumb { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <a class="logo" href="index.html">
+            <span class="logo-icon">⚔</span>
+            <span class="logo-text">スマグロ<span>攻略</span></span>
+        </a>
+        <nav>
+            <a href="#">序盤</a>
+            <a href="#">スキル</a>
+            <a href="#">ボス</a>
+            <a href="#">Tips</a>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="hero-inner">
+        <div class="hero-text" style="flex:1;">
+            <h1>ドラゴンクエスト スマッシュグロウ 攻略</h1>
+            <p>2026年4月21日リリース｜ローグライトRPG攻略の決定版</p>
+            <div class="hero-tags">
+                <span class="hero-tag">序盤攻略</span>
+                <span class="hero-tag">スキルガイド</span>
+                <span class="hero-tag">ボス攻略</span>
+                <span class="hero-tag">効率化Tips</span>
+                <span class="hero-tag">無課金</span>
+            </div>
+        </div>
+        <!-- 公式オープニングトレーラー（クリックでYouTube） -->
+        <a class="hero-thumb" href="https://www.youtube.com/watch?v=-vKoHfxnnxQ" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/-vKoHfxnnxQ/maxresdefault.jpg" alt="オープニングトレーラー">
+            <div class="play-btn">
+                <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M66.5 7.8C65.7 4.8 63.3 2.4 60.3 1.6 55 0 34 0 34 0S13 0 7.7 1.6C4.7 2.4 2.3 4.8 1.5 7.8 0 13.1 0 24 0 24s0 10.9 1.5 16.2c.8 3 3.2 5.4 6.2 6.2C13 48 34 48 34 48s21 0 26.3-1.6c3-.8 5.4-3.2 6.2-6.2C68 34.9 68 24 68 24s0-10.9-1.5-16.2z" fill="#ff0000"/>
+                    <path d="M27 34l18-10-18-10v20z" fill="#fff"/>
+                </svg>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="filter-bar">
+    <div class="filter-inner">
+        <button class="filter-btn active" data-cat="all">すべて</button>
+        <button class="filter-btn" data-cat="ゲーム紹介">ゲーム紹介</button>
+        <button class="filter-btn" data-cat="リセマラ">リセマラ</button>
+        <button class="filter-btn" data-cat="序盤攻略">序盤攻略</button>
+        <button class="filter-btn" data-cat="最強ランキング">最強ランキング</button>
+        <button class="filter-btn" data-cat="スキルガイド">スキルガイド</button>
+        <button class="filter-btn" data-cat="ボス攻略">ボス攻略</button>
+        <button class="filter-btn" data-cat="パーティ編成">パーティ編成</button>
+        <button class="filter-btn" data-cat="課金・ガチャ">課金・ガチャ</button>
+        <button class="filter-btn" data-cat="イベント情報">イベント情報</button>
+        <button class="filter-btn" data-cat="効率的な進め方">効率的な進め方</button>
+        <button class="filter-btn" data-cat="システム解説">システム解説</button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="ad-banner">広告スペース（AdSense審査通過後に設置）</div>
+
+    <div class="content-layout">
+        <div class="main-content">
+            <div class="section-head">
+                <span class="section-head-accent"></span>
+                <h2>攻略記事一覧</h2>
+            </div>
+            <div id="article-list" class="article-grid">
+                <p class="loading">読み込み中...</p>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <div class="widget-head">🏆 人気記事ランキング</div>
+                <div class="widget-body">
+                    <ul class="rank-list" id="rank-list">
+                        <li class="rank-item"><a href="#"><span class="rank-num rank-other">-</span><span class="rank-title">読み込み中...</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 公式ゲーム紹介PV -->
+            <div class="sidebar-widget">
+                <div class="widget-head">🎬 公式PV</div>
+                <div class="widget-body" style="padding:0.75rem;">
+                    <a href="https://www.youtube.com/watch?v=EO0th7z-oiA" target="_blank" rel="noopener"
+                       style="display:block;position:relative;aspect-ratio:16/9;border-radius:4px;overflow:hidden;">
+                        <img src="https://img.youtube.com/vi/EO0th7z-oiA/maxresdefault.jpg"
+                             alt="ゲーム紹介PV" style="width:100%;height:100%;object-fit:cover;display:block;">
+                        <div class="play-btn" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.25);">
+                            <svg viewBox="0 0 68 48" width="40" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M66.5 7.8C65.7 4.8 63.3 2.4 60.3 1.6 55 0 34 0 34 0S13 0 7.7 1.6C4.7 2.4 2.3 4.8 1.5 7.8 0 13.1 0 24 0 24s0 10.9 1.5 16.2c.8 3 3.2 5.4 6.2 6.2C13 48 34 48 34 48s21 0 26.3-1.6c3-.8 5.4-3.2 6.2-6.2C68 34.9 68 24 68 24s0-10.9-1.5-16.2z" fill="#ff0000"/>
+                                <path d="M27 34l18-10-18-10v20z" fill="#fff"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <div class="widget-head">📂 カテゴリ</div>
+                <div class="widget-body">
+                    <div class="cat-list">
+                        <a class="cat-link" href="#" onclick="filterCat('ゲーム紹介')" style="color:var(--cat-intro);border-color:var(--cat-intro);">ゲーム紹介</a>
+                        <a class="cat-link" href="#" onclick="filterCat('序盤攻略')" style="color:var(--cat-beginner);border-color:var(--cat-beginner);">序盤攻略</a>
+                        <a class="cat-link" href="#" onclick="filterCat('スキルガイド')" style="color:var(--cat-skill);border-color:var(--cat-skill);">スキルガイド</a>
+                        <a class="cat-link" href="#" onclick="filterCat('ボス攻略')" style="color:var(--cat-boss);border-color:var(--cat-boss);">ボス攻略</a>
+                        <a class="cat-link" href="#" onclick="filterCat('効率的な進め方')" style="color:var(--cat-tips);border-color:var(--cat-tips);">効率的な進め方</a>
+                        <a class="cat-link" href="#" onclick="filterCat('システム解説')" style="color:var(--cat-system);border-color:var(--cat-system);">システム解説</a>
+                        <a class="cat-link" href="#" onclick="filterCat('リセマラ')" style="color:var(--cat-reroll);border-color:var(--cat-reroll);">リセマラ</a>
+                        <a class="cat-link" href="#" onclick="filterCat('イベント情報')" style="color:var(--cat-event);border-color:var(--cat-event);">イベント情報</a>
+                        <a class="cat-link" href="#" onclick="filterCat('最強ランキング')" style="color:var(--cat-rank);border-color:var(--cat-rank);">最強ランキング</a>
+                        <a class="cat-link" href="#" onclick="filterCat('課金・ガチャ')" style="color:var(--cat-gacha);border-color:var(--cat-gacha);">課金・ガチャ</a>
+                        <a class="cat-link" href="#" onclick="filterCat('パーティ編成')" style="color:var(--cat-party);border-color:var(--cat-party);">パーティ編成</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ad-sidebar">広告スペース</div>
+
+            <div class="sidebar-widget">
+                <div class="widget-head">ℹ️ このサイトについて</div>
+                <div class="widget-body" style="padding:0.75rem 1rem;">
+                    <p style="font-size:0.78rem;color:#666;line-height:1.65;">
+                        ドラクエスマッシュグロウの非公式攻略サイトです。
+                        プレイヤーの口コミ・実況情報をもとにオリジナル攻略記事を作成しています。
+                    </p>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-inner">
+        <p>当サイトはドラゴンクエストスマッシュグロウの非公式攻略サイトです。</p>
+        <p style="margin-top:0.25rem;">©ARMOR PROJECT/BIRD STUDIO　スクウェア・エニックス・KLabとは無関係の個人サイトです。</p>
+        <div class="footer-links">
+            <a href="privacy.html">プライバシーポリシー</a>
+            <a href="contact.html">お問い合わせ</a>
+        </div>
+        <p class="copyright">© 2026 スマグロ攻略サイト</p>
+    </div>
+</footer>
+
+<script>
+// カテゴリ別の公式スクリーンショット（PR Times プレスリリースより）
+const SS1 = 'https://prcdn.freetls.fastly.net/release_image/128734/343/128734-343-0cf526047deb578dd547695e209d33f4-896x1800.png';
+const SS2 = 'https://prcdn.freetls.fastly.net/release_image/128734/343/128734-343-4b3b558393a3bdcd7fbfd3b7aa93a8da-896x1800.png';
+const SS3 = 'https://prcdn.freetls.fastly.net/release_image/128734/343/128734-343-07d4fe1faa4e9564debdf0468ba37bd6-896x1800.png';
+const YT1 = 'https://img.youtube.com/vi/EO0th7z-oiA/maxresdefault.jpg';
+const YT2 = 'https://img.youtube.com/vi/-vKoHfxnnxQ/maxresdefault.jpg';
+const YT3 = 'https://img.youtube.com/vi/cSGARTAoddA/maxresdefault.jpg';
+const FALLBACK_IMG = 'https://prcdn.freetls.fastly.net/release_image/128734/343/128734-343-d272a5a28b2a7767d343227a17cd96fb-1200x675.jpg';
+
+const CAT_IMAGES = {
+    'ゲーム紹介':    YT2,
+    '序盤攻略':     SS1,
+    'スキルガイド':  SS2,
+    'ボス攻略':     SS3,
+    '効率的な進め方': YT1,
+    'システム解説':  YT2,
+    'リセマラ':     YT3,
+    'イベント情報':  SS1,
+    '最強ランキング': SS2,
+    '課金・ガチャ':  SS3,
+    'パーティ編成':  YT1,
+};
+
+const CAT_CLASS = {
+    'ゲーム紹介':    'cat-intro',
+    '序盤攻略':     'cat-beginner',
+    'スキルガイド':  'cat-skill',
+    'ボス攻略':     'cat-boss',
+    '効率的な進め方': 'cat-tips',
+    'システム解説':  'cat-system',
+    'リセマラ':     'cat-reroll',
+    'イベント情報':  'cat-event',
+    '最強ランキング': 'cat-rank',
+    '課金・ガチャ':  'cat-gacha',
+    'パーティ編成':  'cat-party',
+};
+
+let allArticles = [];
+
+function isNew(dateStr) {
+    const d = new Date(dateStr.replace(/年|月/g, '-').replace('日', ''));
+    return (Date.now() - d.getTime()) < 7 * 24 * 60 * 60 * 1000;
+}
+
+function renderCards(articles) {
+    const list = document.getElementById('article-list');
+    if (!articles || articles.length === 0) {
+        list.innerHTML = '<p class="loading">記事を準備中です。</p>';
+        return;
+    }
+    list.innerHTML = articles.map(a => {
+        const cls = CAT_CLASS[a.category] || 'cat-default';
+        const img = CAT_IMAGES[a.category] || FALLBACK_IMG;
+        const newBadge = isNew(a.date) ? '<span class="card-new">NEW</span>' : '';
+        return `
+        <article class="article-card">
+            <a href="articles/${a.filename}">
+                <div class="card-thumb"><img src="${img}" alt="${a.category}" loading="lazy"></div>
+                <div class="card-body">
+                    <span class="cat-badge ${cls}">${a.category}</span>
+                    <p class="card-title">${a.title}</p>
+                    <p class="card-excerpt">${a.excerpt}</p>
+                    <div class="card-footer">
+                        <span class="card-date">${a.date}</span>
+                        ${newBadge}
+                    </div>
+                </div>
+            </a>
+        </article>`;
+    }).join('');
+}
+
+function renderRanking(articles) {
+    const rankClasses = ['rank-1','rank-2','rank-3'];
+    document.getElementById('rank-list').innerHTML = articles.slice(0, 5).map((a, i) => {
+        const rc = rankClasses[i] || 'rank-other';
+        return `<li class="rank-item"><a href="articles/${a.filename}">
+            <span class="rank-num ${rc}">${i + 1}</span>
+            <span class="rank-title">${a.title}</span>
+        </a></li>`;
+    }).join('');
+}
+
+fetch('articles/manifest.json')
+    .then(r => r.json())
+    .then(articles => {
+        allArticles = articles;
+        renderCards(allArticles);
+        renderRanking(allArticles);
+    })
+    .catch(() => {
+        document.getElementById('article-list').innerHTML =
+            '<p class="loading">記事を準備中です。</p>';
+    });
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.cat;
+        renderCards(cat === 'all' ? allArticles : allArticles.filter(a => a.category === cat));
+    });
+});
+
+function filterCat(cat) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    const btn = document.querySelector(`.filter-btn[data-cat="${cat}"]`);
+    if (btn) btn.classList.add('active');
+    renderCards(allArticles.filter(a => a.category === cat));
+    document.getElementById('article-list').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
+
+</body>
+</html>
